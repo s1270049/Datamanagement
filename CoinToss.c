@@ -10,8 +10,13 @@ int main()
     char coin;
     int i, j, num;
     int loscou = 0, wincou = 0;
+    char name[20];
     srand(time(NULL));
     printf("Tossing a coin...\n");
+
+    printf("Who are you?\n");
+    scanf("%s", name);
+    printf("Hello, %s", name);
 
     for (i = 0; i < N; i++)
     {
@@ -28,6 +33,7 @@ int main()
             loscou++;
             printf("Tails\n");
         }
+       
     }
     printf("Heads: %d, Tails: %d\n", wincou, loscou);
     return 0;
