@@ -37,9 +37,9 @@ int main()
     }
     printf("Heads: %d, Tails: %d\n", wincou, loscou);
     if (wincou > loscou)
-        printf("You won!\n");
+        printf("%s won!\n",name);
     else
-        printf("You lose.\n");
+        printf("%s lose.\n",name);
     return 0;
 }
 char CoinToss(int num)
